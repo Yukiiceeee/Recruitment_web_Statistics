@@ -1,8 +1,5 @@
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import MinMaxScaler
-from numpy import set_printoptions
 import matplotlib.pyplot as plt
 # 设置显示中文字体
 from pylab import mpl
