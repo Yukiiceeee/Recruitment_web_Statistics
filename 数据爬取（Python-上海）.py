@@ -10,7 +10,7 @@ import time
 import csv
 
 # 创建文件对象
-f = open('data.csv', mode='w', encoding='utf-8', newline='')
+f = open('【原始数据】Python职业招聘数据-上海.csv', mode='w', encoding='utf-8', newline='')
 csv_writer = csv.DictWriter(f, fieldnames=[
         '职位',
         '公司',
@@ -108,7 +108,7 @@ def get_content():
         csv_writer.writerow(dit)
         print(dit)
 
-for page in range(10):
+for page in range(30):
     get_content()
     # 这里可以写个等待按钮加载完成，但是一般足够加载了，所以不需要
     # WebDriverWait(driver, 10).until(
